@@ -1,0 +1,108 @@
+.header{
+    border-width: 1vh;
+    height: 20vh; ;
+    width: 99vw;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(161, 166, 243);
+}
+
+.container{
+ 
+    background-image: "images.jpg" height="100px" width="100";
+    
+    width: 100vw;
+   
+    height: 65vh;
+
+    background-color: burlywood;
+    
+}
+
+
+.footer{
+
+    border-width: 1vh;
+    height: 20vh ;
+    width: 100vw;
+    background-color:sienna;
+      
+
+}
+.baixo{
+
+    border-width: 1vh;
+    /* height: 35vh; */
+    padding: 50px 0;
+    width: 100vw;
+    background-color:sienna;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+ overflow:hidden;   
+}
+.button1{
+    width: 450px;
+    height:225px;
+    background-image:url(images.jpg);
+    background-size: cover;
+}
+.button1:active, .button2:active, .button3:active, .button4:active{
+    transform: scale(300px, 150px);
+    transition: 0.5s;
+}
+.button1:hover, .button2:hover, .button3:hover, .button4:hover{
+    transform: scale(1.1, 1.1);
+    background-size: cover;
+    transition: 0.5s;
+}
+.button2{
+    width: 450px;
+    height:225px;
+    background-image:url(images1.jpg);
+    background-size: cover;
+}
+
+.button3{
+    width: 450px;
+    height:225px;
+    background-image:url(images2.jpg);
+    background-size: cover;
+}
+
+
+.button4{
+    width: 450px;
+    height:225px;
+    background-image:url(images3.jpg);
+    background-size: cover;
+}
+
+.button5{
+    width: 32px;
+    height:32px;
+    background-image:url(carrinho-de-compras.png);
+    background-size: cover;
+    right: 60px;
+    top: 60px;
+    position:absolute;
+}
+.maincaixa{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.caixa1{
+    size: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+.caixa2{
+size: 5px;
+font-weight: bold;
+}
