@@ -1,4 +1,8 @@
 .header{
+    display: flex;
+
+    justify-content: space-around;
+
     border-width: 1vh;
     height: 20vh; ;
     width: 99vw;
@@ -9,6 +13,10 @@
 
 .container{
  
+    display: flex;
+
+    justify-content: space-around;
+
     background-image: "images.jpg" height="100px" width="100";
     
     width: 100vw;
@@ -21,7 +29,11 @@
 
 
 .footer{
+    display: flex;
 
+    
+    justify-content: space-around;
+    
     border-width: 1vh;
     height: 20vh ;
     width: 100vw;
@@ -106,3 +118,10 @@ body{
 size: 5px;
 font-weight: bold;
 }
+@media screen and (max-width:768px){
+.product-container{
+width:100%;
+flex-direction: column;
+}    
+}
+    
