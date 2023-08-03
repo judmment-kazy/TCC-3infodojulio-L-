@@ -1,8 +1,4 @@
 .header{
-    display: flex;
-
-    justify-content: space-around;
-
     border-width: 1vh;
     height: 20vh; ;
     width: 99vw;
@@ -13,10 +9,6 @@
 
 .container{
  
-    display: flex;
-
-    justify-content: space-around;
-
     background-image: "images.jpg" height="100px" width="100";
     
     width: 100vw;
@@ -29,11 +21,7 @@
 
 
 .footer{
-    display: flex;
 
-    
-    justify-content: space-around;
-    
     border-width: 1vh;
     height: 20vh ;
     width: 100vw;
@@ -118,10 +106,75 @@ body{
 size: 5px;
 font-weight: bold;
 }
-@media screen and (max-width:768px){
-.product-container{
-width:100%;
-flex-direction: column;
-}    
+.input-field{
+    position: relative;
+    height: 40px;
+    width: 50%;
 }
+.input-field input[type="text"]{
+    position:absolute;
+    background: transparent;
+    border:none;
+    box-shadow: none;
+    font-size: 16px;
+    color:#fff;
+    width:100%;
+}
+
+.input-field label{
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+display:block;
+transition: 0.5s;
+
+}
+
+
+.input-field input[type="text"]:focus + label,
+.input-field input[type="text"]:valid + label
+{
+    transform: translateY(-35px);
+    font-size: 14px;
+    color: black;
+    background:crimson;
+    padding: 2px 6px;
+}
+
+.input-field span{
+position: absolute;
+bottom: 0;
+right: 0;
+display:block;
+background: #555;
+width: 100%;
+height: 2px;
+}
+
+.input-field span:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:cornflowerblue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    }
     
+    .input-field input[type="text"]:focus ~ span:before,
+.input-field input[type="text"]:valid ~ span:before
+{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+#botao{
+    width: 32px;
+    height:32px;
+}
+

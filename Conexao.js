@@ -1,7 +1,13 @@
-console.log("Hello world!")
-var login=true;
+var login=false;
+var bu = document.getElementById("botao");
+function primeiro(){
+window.location.href='login.html';
+}
+function segundo(){
+    window.location.href='CarrinhodeCompras.html';
+}
 if(login==false){
-    console.log("Não estás cadastrado")
+    bu.addEventListener("click", primeiro);
 }else{
-    console.log("Tu estás conectado")
+    bu.addEventListener("click", segundo);
 }
