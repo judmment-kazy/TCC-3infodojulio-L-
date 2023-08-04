@@ -8,13 +8,15 @@
 }
 
 .meio{
+    position: absolute;
     display: flex;
-    width: 768.9px;
-    height: 700px;
+    width: 50vw;
+    height: 70vh;
     background-color:sienna ;
     position: absolute;
-    top: 14%;
-    left:28%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
 
@@ -47,11 +49,16 @@ body{
     background-color:sienna;
 } 
 .caixa{
-    font-weight:bold;
+
+     font-weight:bold;
     font-size: 24px;
     text-align: center;
-   
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ 
 }
 
 .input-field{
@@ -71,18 +78,19 @@ body{
 .input-field label{
 position: absolute;
 top: 0px;
-left: 290px;
+
 pointer-events: none;
 display:block;
 transition: 0.5s;
 width:10vw;
 color:black;
+left: 130px;
 }
 
 .input-field input[type="text"]:focus + label,
 .input-field input[type="text"]:valid + label{
     transform: translateY(-35px);
-    left: 290px;
+   
     font-size: 14px;
     color: black;
     background:crimson;
@@ -94,7 +102,7 @@ color:black;
 .input-field span{
 position: absolute;
 bottom: 0;
-left: 196px;
+
 display:block;
 background: #555;
 width: 100%;
@@ -130,4 +138,8 @@ height: 2px;
 
 #linksemconta{
 font-size: 20px;
+}
+#fname{
+    left: 0;
+    
 }

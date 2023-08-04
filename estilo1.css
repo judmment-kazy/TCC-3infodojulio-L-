@@ -83,14 +83,15 @@ body{
     background-size: cover;
 }
 
-.button5{
-    width: 32px;
-    height:32px;
-    background-image:url(carrinho-de-compras.png);
+.carrinho{
+    font-size: 30px;
     background-size: cover;
     right: 60px;
     top: 60px;
     position:absolute;
+   background-color: transparent;
+   border: 0;
+   
 }
 .maincaixa{
     display: flex;
@@ -172,9 +173,9 @@ height: 2px;
     transform-origin: left;
     transition: transform 0.5s ease-in-out;
 }
-
-#botao{
-    width: 32px;
-    height:32px;
+.card{
+    background-color: #555
 }
+
+
 
