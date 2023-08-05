@@ -8,20 +8,24 @@
 }
 
 .container{
- 
-    background-image: "images.jpg" height="100px" width="100";
-    
+    display: grid;
     width: 100vw;
-   
     height: 65vh;
-
     background-color: burlywood;
     
+}
+.grid-container{
+    display: grid;
+  grid-template-columns: auto auto auto;
+    padding: 15px;
+   
 }
 
 
 .footer{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-width: 1vh;
     height: 20vh ;
     width: 100vw;
@@ -69,6 +73,7 @@ body{
     position:absolute;
    background-color: transparent;
    border: 0;
+   position: absolute;
 }
 .carrinho{
     font-size: 30px;
@@ -78,7 +83,7 @@ body{
     position:absolute;
    background-color: transparent;
    border: 0;
-   
+   position:absolute;
 }
 .maincaixa{
     display: flex;
@@ -161,13 +166,42 @@ height: 2px;
     transition: transform 0.5s ease-in-out;
 }
 .card{
-    background-color: #555;
+    display: flex;
+    background-color: #ffffff5b;
     height: 200px;
+    width: 450px;
+    align-items: center;
+    border-radius: 10%;
 }
 .card img{
     float: right;
-    width: 350px;
-    height:200px;
-    padding-left: 500;
+    width: 200px;
+    height:150px;
+    position: relative;
+    padding: 15px;
+    border-radius: 25%;
 }
 
+.textopastel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+    height: 100%;
+    position: relative;
+}
+/* mudar a descrição*/
+.textopastel p{
+transform: translateY(-30px);
+}
+.textopastel span{
+    color: black;
+    font-size: 1rem;
+}
+.textopastel h5{
+    color:grey
+}
+.footer h1{
+   
+    font-size: 5rem;
+}
